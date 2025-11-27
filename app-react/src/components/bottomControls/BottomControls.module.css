@@ -1,0 +1,25 @@
+.btns-container {
+  display: grid;
+  grid-template-columns: repeat(2, min-content) 1fr;
+  justify-content: center;
+  gap: 15px;
+}
+
+@media screen and (max-width: 520px) {
+  .btns-container {
+    grid-template-columns: min-content;
+  }
+}
+
+.btns-container > button:last-child {
+  justify-self: end;
+}
+
+@media screen and (max-width: 520px) {
+  .btns-container > button:last-child {
+    grid-row: 1 / 2;
+  }
+  .btns-container > button:first-child {
+    grid-row: 3 / 4;
+  }
+}

@@ -1,0 +1,38 @@
+.btn {
+  width: 124px;
+  height: 49px;
+  display: grid;
+  place-content: center;
+  /* se cambia pixel por rem para mejor escabilidad, buena práctica, responsive */
+  font: normal normal 500 1.6rem / 22px var(--font-family);
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  text-transform: uppercase;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  box-sizing: inherit;
+  transition: 0.15s all ease-in-out;
+}
+
+.btn:hover {
+  transform: translateY(-10px);
+  filter: brightness(75%);
+}
+
+.btn:active {
+  transform: translateY(-5px);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-primary);
+}
+
+.btn-icon {
+  width: 81px;
+}
+
+.btn-icon > svg {
+  transform: scaleX(-1) rotate(43deg);
+}

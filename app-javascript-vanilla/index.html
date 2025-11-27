@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/typescript.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angel Test - Corte Ingles</title>
+  </head>
+  <body>
+    <main id="main-container" class="main-container">
+      <div class="card">
+        <h1 class="main-title">Test: add your fruit and vegetables</h1>
+        <p class="main-p">
+          Lorem ipsum dolor sit amet consectetur adipiscing, elit mus primis nec inceptos. Lacinia habitasse arcu
+          molestie maecenas cursus quam nunc, hendrerit posuere augue fames dictumst placerat porttitor, dis mi pharetra
+          vestibulum venenatis phasellus.
+        </p>
+        <ul id="list-container" class="list-container"></ul>
+        <span id="empty-list-elemet" class="empty-list-elemet"> Add elements to get started </span>
+        <div id="error-action-btn" role="alert"></div>
+        <div class="btns-container">
+          <button
+            id="to-recover-elements"
+            class="btn btn-secondary btn-icon"
+            aria-label="Recover deleted items"
+            title="Recover Items"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#324BFF">
+              <path
+                d="M480-96q-70 0-131.13-26.6-61.14-26.6-106.4-71.87-45.27-45.26-71.87-106.4Q144-362 144-432t26.6-131.13q26.6-61.14 71.87-106.4 45.26-45.27 106.4-71.87Q410-768 480-768h7l-52-51 51-51 138 138-138 138-51-51 51-51h-6q-109 0-186.5 77.5T216-432q0 109 77.5 186.5T480-168q109 0 186.5-77.5T744-432h72q0 70-26.6 131.13-26.6 61.14-71.87 106.4-45.26 45.27-106.4 71.87Q550-96 480-96Z"
+              />
+            </svg>
+          </button>
+          <button id="delete-elements" class="btn btn-secondary">Delete</button>
+          <button id="btn-overlay-show" class="btn">Add</button>
+        </div>
+      </div>
+    </main>
+
+    <div id="overlay" class="overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="card card-overlay">
+        <h2 class="modal-title">Add New item</h2>
+        <form id="form" class="form">
+          <label for="input-item-list" class="label-form">
+            <span>Add item to list:</span>
+            <input
+              id="input-item-list"
+              class="input-form"
+              placeholder="Type the text here..."
+              type="text"
+              name="item"
+              minlength="3"
+              maxlength="20"
+              aria-describedby="error-form"
+            />
+          </label>
+          <div id="error-form" role="alert"></div>
+        </form>
+        <div class="btns-container-2">
+          <button form="form" class="btn" type="submit">Add</button>
+          <button id="btn-overlay-cancel" class="btn btn-secondary">Cancel</button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/app.ts"></script>
+  </body>
+</html>
