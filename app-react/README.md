@@ -21,10 +21,10 @@ Prerequisites
 
 Setup & install
 
-1. Get to the repository
+1. Get to the directory
 
 ```powershell
-cd corte-ingles-test-react
+cd app-javascript-react
 ```
 
 2. Install dependencies with pnpm

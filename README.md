@@ -9,6 +9,16 @@ Each app tackles the same simple goal: listing, completing, and managing tasks â
 
 Don't forget to test with Playwright the JS Vanilla App!
 
+- You can see more documentation for each app at:
+
+```bash
+cd app-javascript-vanilla\README.md
+```
+
+```bash
+cd app-react\README.md
+```
+
 ## How to start client projects? (Javascript, Vite) ðŸ“‹
 
 ```bash
